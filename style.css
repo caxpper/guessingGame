@@ -1,22 +1,71 @@
 
-body {
+@font-face {
+    font-family: monsterFont;
+    src: url(MonsterAG.ttf);
+}
+
+.doorsBody {
     text-align: center;
     background-image: url("images/factory.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: auto;
+}
+
+.indexBody{
+    background-color: #fcfcfc;
+    width: 90%;
+    height: 650px;
+    margin: auto;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.welcome_div{
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    position: relative;
+    vertical-align: top;
+}
+
+.welcome_text {
+    font-family: monsterFont;
+    font-size: 75px;
+    text-align: center;
+    margin: 20px 0;
+    color: #007ac5;
+}
+
+.welcome_image{
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+.welcome_icon{
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%, 0);
 }
 
 h1{
-    color: lightblue;
+
 }
 
-.doors
-{
-
+.doors{
+    position: relative;
+    top: 50px;
 }
 
 .row{
-    width: 50%;
+    width: 45%;
     margin: auto;
 }
 
@@ -45,7 +94,7 @@ h1{
 
 .boo
 {
-    background: url("images/boo.png");
+    background: url("images/boo.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     width: 104px;
@@ -53,6 +102,15 @@ h1{
     position: relative;
     top: -166px;
     left: 21px;
+}
+
+.monster{
+    width: 104px;
+    height: 196px;
+    position: relative;
+    top: -166px;
+    left: 21px;
+    display: none;
 }
 
 .thumbOpened
@@ -72,7 +130,12 @@ h1{
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    color: #000;
+    font-family: monsterFont;
+    font-size: 30px;
+    color: #007ac5;
+    position: relative;
+    top: 310px;
+    left: 10px;
 
     transform-origin: left;
     transform:rotateY(180deg);
@@ -83,7 +146,7 @@ h1{
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
     width:350px;
-    height:40px;
+    height:100px;
 }
 @keyframes go {
     100%{

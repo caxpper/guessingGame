@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guessing Game</title>
+    <title>Finding Boo</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"> </script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onload="the_number = pick_number()">
-    <h1>Welcome to the Guessing Game</h1>
-    <p id="response_div" class="alert"></p>
-
-    <!--<p class="alert">click on the door and try to click on more than one door</p>-->
-    <div class="doors"></div>
+<body class="indexBody">
+    <div class="container">
+        <div class="welcome_div">
+            <img src="images/scared.jpg" class="welcome_image">
+        </div>
+        <div class="welcome_div">
+            <img src="images/monsterIcon.png"  class="welcome_icon">
+            <p class="welcome_text">Boo has been lost! </p><p class="welcome_text"> Help Sully and Mike find her</p>
+            <a href="doors.html"><img src="images/play.jpg" class="welcome_icon"></a>
+        </div>
+    </div>
 </body>
 </html>
