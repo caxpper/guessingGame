@@ -48,15 +48,48 @@
     top: 10%;
 }
 
+.animation_grow{
+    animation-name: imageSize;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+@keyframes imageSize {
+    from {
+        width: 10%;
+    }
+    to {
+       width: 100%;
+    }
+}
+
 .welcome_icon{
     position: relative;
     left: 50%;
     top: 20px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%,0);
 }
 
-h1{
+.welcome_button{
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%,0);
+}
 
+.animation_rotate{
+    animation-name: iconRotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes iconRotate {
+    from {
+        transform: rotateY(0deg) translate(-50%,0);
+    }
+    to {
+        transform:  translate(-50%,0) rotateY(180deg);
+    }
 }
 
 .doors{
@@ -69,8 +102,16 @@ h1{
     margin: auto;
 }
 
+.power{
+    height: 30px;
+    width: 30px;
+    background: radial-gradient(transparent 25%, white 50%, transparent 80%);
+    position: relative;
+    left: 58px;
+    top: -367px;
+}
 
-.perspective
+.border
 {
     background: url("images/doorBorder.png");
     background-repeat: no-repeat;
@@ -80,11 +121,8 @@ h1{
     width: 147px;
 }
 
-.thumb
+.door
 {
-    /*background: url("images/door4.png");
-    background-repeat: no-repeat;
-    background-position: center center;*/
     width: 104px;
     height: 196px;
     position: relative;
@@ -113,10 +151,10 @@ h1{
     display: none;
 }
 
-.thumbOpened
+.doorOpened
 {
     transform: rotateY(-95deg);
-    transform-origin: 8px;
+    transform-origin: 10px;
     transition: .5s linear;
 }
 
@@ -136,7 +174,7 @@ h1{
     position: relative;
     top: 310px;
     left: 10px;
-
+    white-space: pre-line;
     transform-origin: left;
     transform:rotateY(180deg);
     opacity:0;
@@ -145,8 +183,7 @@ h1{
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
-    width:350px;
-    height:100px;
+    width:300px;
 }
 @keyframes go {
     100%{
