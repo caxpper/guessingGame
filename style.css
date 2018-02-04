@@ -185,6 +185,7 @@
     animation-delay: 0.5s;
     width:300px;
 }
+
 @keyframes go {
     100%{
         opacity:1;
