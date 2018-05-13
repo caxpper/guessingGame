@@ -1,0 +1,93 @@
+
+body {
+    text-align: center;
+    background-image: url("images/factory.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: lightblue;
+}
+
+.doors
+{
+
+}
+
+.row{
+    width: 50%;
+    margin: auto;
+}
+
+
+.perspective
+{
+    background: url("images/doorBorder.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    height: 230px;
+    width: 147px;
+}
+
+.thumb
+{
+    /*background: url("images/door4.png");
+    background-repeat: no-repeat;
+    background-position: center center;*/
+    width: 104px;
+    height: 196px;
+    position: relative;
+    top: 30px;
+    left: 21px;
+}
+
+.boo
+{
+    background: url("images/boo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 104px;
+    height: 196px;
+    position: relative;
+    top: -166px;
+    left: 21px;
+}
+
+.thumbOpened
+{
+    transform: rotateY(-95deg);
+    transform-origin: 8px;
+    transition: .5s linear;
+}
+
+.alert {
+    float: left;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #000;
+
+    transform-origin: left;
+    transform:rotateY(180deg);
+    opacity:0;
+    animation-name: go;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    width:350px;
+    height:40px;
+}
+@keyframes go {
+    100%{
+        opacity:1;
+        transform:rotateY(0deg);
+    }
+}
