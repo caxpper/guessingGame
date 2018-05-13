@@ -2,22 +2,34 @@ $(document).ready(initializeApp);
 
 var the_number = null;
 
+/**
+ *
+ */
 function initPageSound(){
     var sound = new Audio();
     sound.src= "sounds/2319.wav";
     sound.play();
 }
 
+/**
+ *
+ */
 function endPageSound(){
     var sound = new Audio();
     sound.src= "sounds/week.wav";
     sound.play();
 }
 
+/**
+ *
+ */
 function initializeApp(){
     createDoors();
 }
 
+/**
+ *
+ */
 function pick_number(){
     var random_number = getRandomInt(1, 15);
     return random_number;
@@ -169,6 +181,5 @@ function openDoor(field) {
             oldPower.show();
         }
     }
-
 }
 
